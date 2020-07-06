@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+
+
+            <form action="backend.php">
+                <p>how much your bill ??</p>
+                <p>Rs. <input type
+                    ="text" id="bilamount" placeholder="Bill Amount"></p>
+
+                <p>How was your service??</p>
+                <select name="service" id="serviceQual">
+                    <option disabled selected value="0">.........choose an option..........</option>
+                    <option value="0.15">15&#37; &#45; outstanding</option>
+                    <option value="0.10">10&#37; &#45; good</option>
+                    <option value="0.05">5&#37; &#45; its ok</option>
+                </select>
+            </form>
+
+            <p>how many peapole sharing the Bill</p>
+            <input type="text" placeholder="number of people" id="peopleamt">
+
+        </div>
+        <button id="calculate" type="button">calculate</button>
+
+        <!-- calculator end -->
+        <div id="totalTip">
+            <sup>Rs. <span id="tip">0.00</span> </sup>
+            <small id="each">each</small>
+        </div>
+        <!-- total tip end -->
+    </div>
+
+    <script type="text/javascript" src="tipscript.js"></script>
+
+
+
+</body>
+
+</html>

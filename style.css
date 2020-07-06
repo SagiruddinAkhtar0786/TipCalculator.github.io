@@ -1,0 +1,166 @@
+body{
+    /* background-color: grey; */
+    background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #642b73, #c6426e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #642b73, #c6426e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Varela Round', sans-serif;
+    /* text-align: center; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid red;
+    background-color: whitesmoke;
+}
+
+#container h1{
+    /* margin-left: 200px; */
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+#container p{
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+form input[type="text"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+#serviceQual{
+    margin-left: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 300px; 
+    font-size: 20px;
+}
+
+
+  
+
+#peopleamt{
+    margin-left: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 300px; 
+    font-size: 20px; 
+
+}
+#calculate{
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: cyan;
+    margin-left: 200px;
+}
+
+
+#totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  #totalTip:before {
+    content: "Tip amount";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  /* #totalTip sup {
+    font-size: 20px;
+    top: -18px;
+  } */
+  
+  #totalTip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+  }
+
+
+
+  /* media queries */
+
+
+  @media screen and (max-width:425px) {
+    #container{
+        width:min-content;
+        /* text-align: center; */
+    }
+    
+#container p{
+    margin-left: 50px;
+   
+}
+
+   
+    form input[type="text"]{
+        text-align: center;
+    }
+    
+    #serviceQual{
+       margin-left: 50px;
+    }
+    
+    
+      
+    
+    #peopleamt{
+        margin-left: 50px;
+    
+    }
+    #calculate{
+        width: 150px;
+        padding: 10px;
+        margin:20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: cyan;
+        margin-left: 100px;
+    }
+    
+    
+    #totalTip {
+        font-size: 30px;
+        margin-top: 5px;
+        text-align: center;
+      }
+      
+      #totalTip:before {
+        content: "Tip amount";
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-transform: uppercase;
+      }
+      
+      /* #totalTip sup {
+        font-size: 20px;
+        top: -18px;
+      } */
+      
+      #totalTip small {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+      }
+    
+  }
